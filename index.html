@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- Стили -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- Расчет хедера, бургер меню и слайдера -->
+		<script src="app/main.js" defer></script>
+		<!-- Калькулятор цены -->
+		<script src="app/calculator.js" defer></script>
+		<!-- Переключатель тем -->
+		<script src="app/theme.js" defer></script>
+
+		<title>А-Лизинг</title>
+	</head>
+
+	<body>
+		<!-- Флекс-обертка -->
+
+		<div class="flex-container">
+			<!-- Хедер -->
+
+			<header class="header js-header">
+				<a href="index.html" class="header__logo"
+					><img src="img/icons/aLeasingLogo.png" alt="А-Лизинг логотип"
+				/></a>
+				<div class="header__hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__list-item">
+							<a href="#product-id">Услуги</a>
+						</li>
+						<li class="header__list-item">
+							<a href="#coverage-id">Страхование</a>
+						</li>
+						<li class="header__list-item">
+							<a href="#calculator-id">Калькулятор</a>
+						</li>
+						<li class="header__list-item">
+							<a href="#contacts-id">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a href="tel:+79361022595" class="header__phone">8 936 102 25 95</a>
+				<!-- Темная тема -->
+
+				<button class="dark-mode-btn">
+					<img
+						src="img/icons/svg/sun.svg"
+						alt="Светлая тема"
+						class="dark-mode-btn-icon"
+					/>
+					<img
+						src="img/icons/svg/moon.svg"
+						alt="Темная тема"
+						class="dark-mode-btn-icon"
+					/>
+				</button>
+			</header>
+
+			<!-- Начало основного контента -->
+
+			<main class="main" id="main-id">
+				<!-- секция Слайдер -->
+
+				<section class="slider" id="slider-id">
+					<div class="slider__list">
+						<div class="slider__item">
+							<img
+								src="img/slider/passengerСar.png"
+								alt="Пассажирские автомобили А-Лизинг"
+							/>
+
+							<div class="content">
+								<h4 class="title">Финансовая аренда</h4>
+								<div class="type">Легковых авто</div>
+								<div class="description">Аванс 0% на все виды транспорта</div>
+								<div class="button">
+									<a href="#calculator-id">рассчитать стоимость</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<img
+								src="img/slider/trucks.png"
+								alt="Грузовые автомобили А-Лизинг"
+							/>
+							<div class="content">
+								<h4 class="title">Финансовая аренда</h4>
+								<div class="type">Грузовых авто</div>
+								<div class="description">Срок лизинга от года до 5 лет</div>
+								<div class="button">
+									<a href="#calculator-id">рассчитать стоимость</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<img src="img/slider/special.png" alt="Спецтехника А-Лизинг" />
+
+							<div class="content">
+								<h4 class="title">Финансовая аренда</h4>
+								<div class="type">Спецтехники</div>
+								<div class="description">Обсудим все Ваши предложения</div>
+								<div class="button">
+									<a href="#calculator-id">рассчитать стоимость</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider__item">
+							<img src="img/slider/trains.png" alt="Ж/Д Транспорт А-Лизинг" />
+
+							<div class="content">
+								<h4 class="title">Финансовая аренда</h4>
+								<div class="type">Ж/Д Транспорта</div>
+								<div class="description">
+									Мотовозы, локомотивы и любая другая техника
+								</div>
+								<div class="button">
+									<a href="#calculator-id">рассчитать стоимость</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<img
+								src="img/slider/robots.png"
+								alt="Станки и прочее оборудование А-Лизинг"
+							/>
+
+							<div class="content">
+								<h4 class="title">Финансовая аренда</h4>
+								<div class="type">Оборудования</div>
+								<div class="description">Любое нужное Вам оборудование</div>
+								<div class="button">
+									<a href="#calculator-id">рассчитать стоимость</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!----эскиз изображения слайдера---->
+
+					<div class="thumbnail">
+						<div class="slider__item">
+							<img
+								src="img/slider/passengerСar.png"
+								alt="Пассажирские автомобили А-Лизинг"
+							/>
+						</div>
+						<div class="slider__item">
+							<img
+								src="img/slider/trucks.png"
+								alt="Грузовые автомобили А-Лизинг"
+							/>
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/special.png" alt="Спецтехника А-Лизинг" />
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/trains.png" alt="Ж/Д Транспорт А-Лизинг" />
+						</div>
+						<div class="slider__item">
+							<img
+								src="img/slider/robots.png"
+								alt="Станки и прочее оборудование А-Лизинг"
+							/>
+						</div>
+					</div>
+
+					<div class="nextPrevArrows">
+						<button class="prev"><</button>
+						<button class="next">></button>
+					</div>
+				</section>
+
+				<!-- Конец Слайдера -->
+
+				<section class="product" id="product-id">
+					<article class="product__article">
+						<h1>Что финансируем</h1>
+					</article>
+					<div class="content-container">
+						<div class="product__card card-first">
+							<h4 class="product__tittle">Легковые авто</h4>
+						</div>
+						<div class="product__card card-two">
+							<h4 class="product__tittle">Грузовые авто</h4>
+						</div>
+						<div class="product__card card-three">
+							<h4 class="product__tittle">Спецтехника</h4>
+						</div>
+						<div class="product__card card-four">
+							<h4 class="product__tittle">Ж/Д Транспорт</h4>
+						</div>
+						<div class="product__card card-five">
+							<h4 class="product__tittle">Спецоборудование</h4>
+						</div>
+					</div>
+				</section>
+
+				<!-- Начало секции Страхование -->
+
+				<section class="coverage" id="coverage-id">
+					<article class="coverage__place"><h1>Партнеры А-Лизинга</h1></article>
+					<div class="content-container">
+						<article class="coverage__article">
+							<img
+								src="img/coverage/Igoria.png"
+								alt="Страховая Компания Югория"
+								class="coverage__img"
+							/>
+							<div class="coverage__data">
+								<h4 class="coverage__title">СК Югория</h4>
+								<a
+									href="https://new.ugsk.ru/"
+									class="coverage__button"
+									target="_blank"
+									>Сайт партнера</a
+								>
+							</div>
+						</article>
+						<article class="coverage__article">
+							<img
+								src="img/coverage/Ingo.png"
+								alt="Страховая Компания Ингосстрах"
+								class="coverage__img"
+							/>
+							<div class="coverage__data">
+								<h4 class="coverage__title">СК Ингосстрах</h4>
+								<a
+									href="https://www.ingos.ru/"
+									target="_blank"
+									class="coverage__button"
+									>Сайт партнера</a
+								>
+							</div>
+						</article>
+						<article class="coverage__article">
+							<img
+								src="img/coverage/VSK.png"
+								alt="ВСК страховой дом"
+								class="coverage__img"
+							/>
+							<div class="coverage__data">
+								<!-- <span class="coverage__desc">Текст</span> -->
+								<h4 class="coverage__title">ВСК страховой дом</h4>
+								<a
+									href="https://www.vsk.ru"
+									target="_blank"
+									class="coverage__button"
+									>Сайт партнера</a
+								>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Конец секции Страхование -->
+
+				<!-- Секция инвесторам -->
+
+				<section class="calculator" id="calculator-id">
+					<form id="form">
+						<div class="calculator__heading">
+							<h1 class="calculator__heading-title">Калькулятор Лизинга</h1>
+							<p class="calculator__heading-desc">
+								Сделайте предварительный расчёт ежемесячного платежа по лизингу
+							</p>
+						</div>
+
+						<!-- Стартовая цена объекта -->
+						<div class="content-container">
+							<div class="calculator__box">
+								<div class="calculator__box-start">
+									<label for="price-input" class="title__inline">
+										<span class="title__inline">Стоимость предмета</span>
+										<input
+											type="number"
+											step="5000"
+											pattern="[0-9]*"
+											min="1000000"
+											max="50000000"
+											value="1000000"
+											id="price-input"
+											class="title__inline input-short"
+										/>
+										<span class="title__inline">₽</span>
+									</label>
+									<input
+										type="range"
+										id="price-range"
+										class="range-input"
+										min="1000000"
+										max="50000000"
+										value="1000000"
+										step="5000"
+									/>
+									<div class="calculator__box-limits">
+										<span>1 млн</span><span>50 млн</span>
+									</div>
+									<!-- Стартовая цена объекта - конец -->
+
+									<!-- Срок лизинга -->
+									<label for="time-input" class="title__inline">
+										<span class="title__inline">Срок лизинга</span>
+										<input
+											type="number"
+											step="1"
+											pattern="[0-9]*"
+											min="12"
+											max="60"
+											value="12"
+											id="time-input"
+											class="title__inline input-short"
+										/>
+										<span class="title__inline">мес.</span>
+									</label>
+									<input
+										type="range"
+										id="time-range"
+										class="range-input"
+										step="1"
+										min="12"
+										max="60"
+										value="12"
+									/>
+									<div class="calculator__box-limits">
+										<span>12 мес</span><span>60 мес</span>
+									</div>
+									<!-- Срок лизинга - конец -->
+
+									<!-- Первоначальный взнос -->
+									<label for="firstPayment-input" class="title__inline">
+										<span class="title__inline">Первоначальный взнос</span>
+										<input
+											type="number"
+											step="1"
+											pattern="[0-9]*"
+											min="0"
+											max="49"
+											value="0"
+											id="firstPayment-input"
+											class="title__inline input-short"
+										/>
+										<span class="title__inline">%</span>
+									</label>
+									<input
+										type="range"
+										id="firstPayment-range"
+										class="range-input"
+										step="1"
+										min="0"
+										max="49"
+										value="0"
+									/>
+									<div class="calculator__box-limits">
+										<span>от 0</span><span>49%</span>
+									</div>
+									<!-- Первоначальный взнос - конец -->
+								</div>
+
+								<!-- Раздел вывода расчётов -->
+
+								<div class="calculator__box-end">
+									<div class="calculator__price">
+										<div class="calculator__price-title">
+											Результат расчёта:
+										</div>
+										<div class="calculator__price-value">
+											<span id="total-price">1 060 000</span>
+											рублей
+										</div>
+									</div>
+									<div class="calculator__price">
+										<div class="calculator__price-title">Месячный платеж:</div>
+										<div class="calculator__price-value">
+											<span id="out-payment">88 350</span>
+											рублей
+										</div>
+									</div>
+								</div>
+
+								<!-- Конец вывода расчётов -->
+							</div>
+						</div>
+					</form>
+				</section>
+
+				<!-- конец секции Калькулятор -->
+
+				<!-- Контактная информация -->
+
+				<section class="contacts" id="contacts-id">
+					<article class="contacts__article">
+						<h1>Контакты</h1>
+					</article>
+					<div class="content-container">
+						<div class="contacts__map">
+							<div style="position: relative; overflow: hidden">
+								<a
+									href="https://yandex.ru/maps/10758/himki/?utm_medium=mapframe&utm_source=maps"
+									style="
+										color: #eee;
+										font-size: 1rem;
+										position: absolute;
+										top: 0px;
+									"
+								></a
+								><a
+									href="https://yandex.ru/maps/10758/himki/house/ulitsa_zhukovskogo_10/Z04YcgNpTkMAQFtvfXVxdn5gbA==/inside/?ll=37.449767%2C55.907238&tab=inside&utm_medium=mapframe&utm_source=maps&z=17"
+									style="
+										color: #eee;
+										font-size: 1rem;
+										position: absolute;
+										top: 14px;
+									"
+								></a
+								><iframe
+									src="https://yandex.ru/map-widget/v1/?ll=37.449767%2C55.907238&mode=whatshere&tab=inside&whatshere%5Bpoint%5D=37.449767%2C55.907238&whatshere%5Bzoom%5D=17&z=17"
+									class="contacts__map-iframe"
+									frameborder="0"
+								></iframe>
+							</div>
+						</div>
+						<div class="contacts__information">
+							<h2 class="contacts__information-title">Наш офис</h2>
+							<p class="contacts__information-desc">
+								Россия, Московская область, г.Химки, ул. Жуковского д.10
+							</p>
+							<h2 class="contacts__information-title">По любым вопросам</h2>
+							<div class="contacts__information-link">
+								<a
+									class="contacts__information-mail"
+									href="mailto:a-leasing@inbox.ru"
+									>a-leasing@inbox.ru</a
+								>
+								<a href="tel:+79361022595" class="contacts__information-phone"
+									>8 936 102 25 95</a
+								>
+							</div>
+
+							<h2 class="contacts__information-title">Режим работы:</h2>
+							<p class="contacts__information-desc">
+								Понедельник - Пятница 8:00 - 17:00
+							</p>
+
+							<p class="contacts__information-desc">
+								Суббота Воскресенье - ЗАКРЫТО
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Конец секции Контакты -->
+			</main>
+
+			<!-- Конец основного контента -->
+
+			<!-- Начало Подвала -->
+
+			<footer class="footer">
+				<div class="waves">
+					<div class="wave" id="wave1"></div>
+					<div class="wave" id="wave2"></div>
+					<div class="wave" id="wave3"></div>
+					<div class="wave" id="wave4"></div>
+				</div>
+
+				<div class="footer__container">
+					<a href="index.html" class="footer__menu__logo"
+						><img src="img/icons/aLeasingLogo.png" alt="А-Лизинг логотип"
+					/></a>
+					<ul class="footer__menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#main-id">Вверх</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#product-id">Услуги</a>
+						</li>
+					</ul>
+				</div>
+
+				<h2>&copy; ООО «А-Лизинг»</h2>
+			</footer>
+
+			<!-- Конец Подвала -->
+		</div>
+		<!-- Флекс-обертка конец-->
+	</body>
+</html>
